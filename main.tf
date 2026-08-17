@@ -14,11 +14,31 @@ provider "aws" {
 }
 
 # Create a VPC
-resource "aws_instance" "mi-example-instance" {
-  ami           = "ami-02167eae61967e403"
-  instance_type = "t2.nano"
+resource "aws_vpc" "production-vpc" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "main"
+  }
+}
+
+resource "aws_subnet" "subnet-1" {
+  #referencia al id de la vpc
+  vpc_id     = aws_vpc.production-vpc.id 
+  cidr_block = "10.0.1.0/24"
+
+  tags = {
+    Name = "subnet-1"
+  }
+}
+
+resource "aws_subnet" "subnet-2" {
+  #referencia al id de la vpc
+  vpc_id     = aws_vpc.production-vpc.id 
+  cidr_block = "10.0.2.0/24"
+
+  tags = {
+    Name = "subnet-2"
   }
 }

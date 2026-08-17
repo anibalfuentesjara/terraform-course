@@ -96,6 +96,13 @@ Luego, puedo ver el plan que ejecutará terraform sin que haga ningún cambio a�
 terraform plan
 ```
 
+El plan nos mostrará los recursos a crear (+), actualizar (~) o eliminar (-)
+
+```shell
++ create
+~ update in-place
+```
+
 Y si estoy de acuerdo con el plan, puedo desplegar los recursos y aplicar el plan
 
 ```shell
