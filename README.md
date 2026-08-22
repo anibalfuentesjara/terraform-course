@@ -13,3 +13,11 @@ terraform-course/
 	└── main.tf
 ```
 
+### `01_basic_course`
+
+Contiene todo el contenido del curso sobre los componentes básicos de Terraform.
+
+### `02_example_project`
+
+Contiene un proyecto aplicado de un servidor web con conexión a Internet mediante una instancia de EC2.
+

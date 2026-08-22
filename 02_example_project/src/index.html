@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gatos y su personalidad</title>
+	<style>
+		:root { --ink: #292522; --muted: #756d66; --cream: #f8f5f0; --accent: #d9825b; }
+		* { box-sizing: border-box; }
+		body { margin: 0; color: var(--ink); background: var(--cream); font-family: Georgia, serif; }
+		header { max-width: 980px; margin: auto; padding: 72px 24px 48px; text-align: center; }
+		.eyebrow { color: var(--accent); font: 700 11px/1.2 Arial, sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+		h1 { margin: 14px 0 16px; font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 400; line-height: .98; }
+		header p { max-width: 540px; margin: auto; color: var(--muted); font: 16px/1.7 Arial, sans-serif; }
+		main { max-width: 1120px; margin: auto; padding: 0 24px 72px; }
+		.cats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+		article { overflow: hidden; background: #fff; border: 1px solid #ebe5de; border-radius: 18px; transition: transform .2s ease, box-shadow .2s ease; }
+		article:hover { transform: translateY(-4px); box-shadow: 0 12px 28px #4d392018; }
+		.photo { display: grid; place-items: center; height: 190px; background: #eee8e1; color: #9b8e83; font: 12px Arial, sans-serif; letter-spacing: .05em; }
+		.photo img { display: block; width: 100%; max-width: 100%; height: 100%; object-fit: cover; object-position: center; }
+		.copy { padding: 20px; }
+		h2 { margin: 0 0 9px; font-size: 23px; font-weight: 400; }
+		.copy p { margin: 0; color: var(--muted); font: 14px/1.6 Arial, sans-serif; }
+		footer { padding: 0 24px 35px; color: #a0958c; text-align: center; font: 12px Arial, sans-serif; }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="eyebrow">Pequeñas personalidades</div>
+		<h1>El color de un gato<br>cuenta una historia.</h1>
+		<p>Descubre las cualidades que suelen asociarse a cada pelaje. Aunque cada gato es único, todos tienen una forma especial de conquistar el corazón.</p>
+	</header>
+
+	<main>
+		<section class="cats" aria-label="Personalidades según el color del pelaje">
+			<article><div class="copy"><h2>Naranja</h2><p>Amistoso, curioso y con una energía encantadora. Suele ser el alma juguetona de la casa.</p></div><div class="photo"><img src="img/gato-naranja.jpg" alt="Gato naranja"></div></article>
+			<article><div class="copy"><h2>Blanco</h2><p>Elegante y sereno, disfruta de la calma y observa el mundo con una sensibilidad especial.</p></div><div class="photo"><img src="img/gato-blanco.jpg" alt="Gato blanco"></div></article>
+			<article><div class="copy"><h2>Negro</h2><p>Misterioso, independiente y leal. Cuando confía, ofrece una compañía profunda y silenciosa.</p></div><div class="photo"><img src="img/gato-negro.jpg" alt="Gato negro"></div></article>
+			<article><div class="copy"><h2>Gris</h2><p>Equilibrado y tranquilo, combina una curiosidad suave con una gran capacidad para adaptarse.</p></div><div class="photo"><img src="img/gato-gris.jpg" alt="Gato gris"></div></article>
+			<article><div class="copy"><h2>Carey</h2><p>Intenso y decidido, tiene una personalidad marcada y un carácter tan único como su patrón.</p></div><div class="photo"><img src="img/gato-carey.jpg" alt="Gato carey"></div></article>
+			<article><div class="copy"><h2>Cálico</h2><p>Vivaz, expresivo y lleno de contrastes; siempre parece tener una opinión que compartir.</p></div><div class="photo"><img src="img/gato-calico.jpg" alt="Gato cálico"></div></article>
+			<article><div class="copy"><h2>Tuxedo</h2><p>Sociable y elegante, mezcla una actitud juguetona con el porte de un pequeño caballero.</p></div><div class="photo"><img src="img/gato-tuxedo.jpg" alt="Gato tuxedo"></div></article>
+		</section>
+	</main>
+	<footer>El pelaje puede sugerir, pero el vínculo es lo que realmente define a cada gato.</footer>
+</body>
+</html>
